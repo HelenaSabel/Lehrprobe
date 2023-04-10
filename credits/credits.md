@@ -1,7 +1,7 @@
 # License and attribution statements
 
 ## Academic content
-The contents of this website are under a [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+The contents of this website were authored by Helena Bermare under a [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Website template
 [HTML5 UP](http://html5up.net/). See complete license and credits in subfolder [html5UP](https://github.com/HelenaSabel/Lehrprobe/tree/main/credits/html5UP)
