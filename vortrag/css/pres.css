@@ -1,0 +1,10 @@
+
+/*body:after {
+content: url(../images/misha.jpg);
+position: fixed;
+bottom: 3.5em;
+left: 3.5em;}*/
+
+td {
+    vertical-align:middle;
+}

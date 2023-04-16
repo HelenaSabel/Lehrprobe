@@ -1,0 +1,26 @@
+body:after {
+content: "Simposio ILG 2022";
+white-space: pre;
+color: #fecf6a;
+position: fixed;
+font-size:x-large;
+font-weight:bold;
+width:11em;
+bottom: 1.5em;
+left: 1.5em;}
+
+ul ul {
+    font-size: smaller;
+}
+
+.references {
+    font-size: smaller;
+}
+
+figcaption, .figcaption {
+    font-size: x-large;
+}
+
+.word {
+    background-color:#fdf6e3;
+}

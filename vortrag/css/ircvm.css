@@ -1,0 +1,26 @@
+body:after {
+content: "Digitalitzar\Al’Edat Mitjana";
+white-space: pre;
+color:#756469;
+position: fixed;
+font-size:x-large;
+font-weight:bold;
+width:12em;
+bottom: 3em;
+left: 3.5em;}
+
+ul ul {
+    font-size: smaller;
+}
+
+.references {
+    font-size: smaller;
+}
+
+figcaption, .figcaption {
+    font-size: x-large;
+}
+
+.word {
+    background-color:#fdf6e3;
+}
