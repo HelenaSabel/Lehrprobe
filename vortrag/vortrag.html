@@ -31,10 +31,13 @@
                             <li>Efficient workflows <ul>
                                     <li>Challenges when reusing existing datasets</li>
                                     <li>Machine-assisted pipelines</li>
-                                    <li>The role of Open Science</li>
+                                    <li>Interface sustainability</li>
                                 </ul></li>
-                            <li>Multiformat publishing</li>
-                            <li>Final remarks</li>
+                            <li>From open data to open science <ul>
+                                    <li>Data usability</li>
+                                    <li>FAIR software</li>
+                                </ul></li>
+                            <li>Conclusion</li>
                         </ul>
                     </section>
                 </section>
@@ -93,8 +96,9 @@
                                         homogenisation</li>
                                 </ul></li>
                         </ul>
-                        <img src="images/editorial-profiles.png" alt="editorial profile pipeline"
-                            class="fragment fade-up" />
+                    </section>
+                    <section>
+                        <img src="images/editorial-profiles.png" alt="editorial profile pipeline" />
                     </section>
                     <section>
                         <h2>Challenges when reusing existing datasets</h2>
@@ -139,23 +143,19 @@
                     <section>
                         <h2>Machine-assisted pipelines</h2>
                         <ul>
-<!--
-
-Pagel, Janis, Nidhi Sihag, and Nils Reiter. 2021. “Predicting Structural Elements in Ger-
-man Drama,” 217–227. Second Conference on Computational Humanities Research. (references therein?)       
-      
-                            
--->                           
                             <li class="fragment">From images to annotated, machine-readable texts
                                     <ul class="fragment">
-                                    <li>images and IIIF to ensure sustainability</li>
-                                    <li>pre-trained models and easy-to-use training algorithms</li>
-                                    <li>from transcription file formats to TEI <ul>
+                                    <li>Pre-trained models and easy-to-use training algorithms</li>
+                                    <li>From transcription file formats to TEI through <ul>
                                             <li>scripting (e.g. <a
                                                   href="https://github.com/DiScholEd/pipeline-digital-scholarly-editions"
-                                                  target="_blank">DiScholEd</a> pipeline)</li>
-                                            <li>machine-learning approaches (e.g. <a href="ruiz2022"
-                                                  >Ruiz et al. 2022</a>, [to add])</li>
+                                                  target="_blank">DiScholEd</a> pipeline, <a
+                                                  href="https://github.com/TEI4HTR/page2tei"
+                                                  target="_blank">LECTAUREP - Page2tei</a>)</li>
+                                            <li>machine-learning approaches (e.g. <a
+                                                  href="#khemakhem2017">Khemakhem et al. 2017</a>,
+                                                  <a href="#pagel2021">Pagel et al. 2021</a>
+                                                <a href="#ruiz2022">Ruiz et al. 2022</a>)</li>
                                         </ul></li>
                                 </ul></li>
                         </ul>
@@ -164,9 +164,9 @@ man Drama,” 217–227. Second Conference on Computational Humanities Research.
                         <h2>Machine-assisted pipelines</h2>
                         <ul>
                             <li class="fragment">Automatic collation<ul class="fragment">
-                                    <li><em>Hypercollate</em>, processing of TEI-XML transcriptions of texts
-                                        with variation (<a href="#bleeker2022">Bleeker et al.
-                                            2022</a>)</li>
+                                    <li><em>Hypercollate</em>, processing of TEI-XML transcriptions
+                                        of texts with variation (<a href="#bleeker2022">Bleeker et
+                                            al. 2022</a>)</li>
                                 </ul></li>
                         </ul>
                         <figure class="fragment">
@@ -180,15 +180,16 @@ man Drama,” 217–227. Second Conference on Computational Humanities Research.
                             <li class="fragment">Linguistic and literary annotations through Natural
                                 Language Processing (NLP)<ul class="fragment">
                                     <li>Challenges: <ul>
-                                            <li>lower performance for historical varieties and
+                                            <li>Lower performance for historical varieties and
                                                 low-resource languages</li>
-                                            <li>combination of marked-up and plain text formats
+                                            <li>Combination of marked-up and plain text formats
                                                 during the annotation pipeline <ul>
-                                                  <li>exceptions: <em>NEISS TEI Entity Enricher</em> (<a
-                                                  href="#lemke2023">Lemke &amp; Sperfeld 2023</a>),
-                                                  <em>acdh-spacytei</em> (<a href="#andorfer2021">Andorfer
-                                                  &amp; Schlögl 2021</a>), <em>Stand</em>off <em>Tools</em>
-                                                  (<a href="#lueck2023">Lück 2023)</a></li>
+                                                  <li>To cite a few exceptions: <em>NEISS TEI Entity
+                                                  Enricher</em> (<a href="#lemke2023">Lemke &amp;
+                                                  Sperfeld 2023</a>), <em>acdh-spacytei</em> (<a
+                                                  href="#andorfer2021">Andorfer &amp; Schlögl
+                                                  2021</a>), <em>Stand</em>off <em>Tools</em> (<a
+                                                  href="#lueck2023">Lück 2023)</a></li>
                                                 </ul></li>
                                         </ul></li>
                                 </ul></li>
@@ -202,40 +203,89 @@ man Drama,” 217–227. Second Conference on Computational Humanities Research.
                                     <li>Example: INCEpTION (<a href="#klie2018">Klie et al.
                                         2018</a>)</li>
                                 </ul></li>
-                            
                         </ul>
                     </section>
                     <section>
-                        <h2>Open science workflows</h2>
-                        <ul class="fragment">
-                            <li>FAIR data and FAIR software (<a href="#lamprecht2020">Lamprecht et
-                                    al. 2020</a>)</li>
-                            <li>Besides data, reuse of <ul>
-                                    <li>Code and configuration parameters</li>
-                                    <li>Interfaces</li>
+                        <h2>Interface sustainability</h2>
+                        <ul>
+                            <li class="fragment">Issues: assuring the infrastructure and maintenance
+                                after the funding period, deprecation of dependencies, changes in
+                                browser support, etc. </li>
+                            <li class="fragment">(Partial) solution: Out-of-the-box corpus
+                                exploitation platforms <ul>
+                                    <li class="fragment">The role of Virtual Research Environments
+                                        in digital textual criticism (<a>Tóth-Czifra 2021</a>). Examples: <ul>
+                                             <li><em><a
+                                                  href="https://www.elaborate.huygens.knaw.nl/login"
+                                                  >eLaborate</a></em>, <em><a
+                                                  href="https://www.escriptorium.uk/" target="blank"
+                                                  >eScriptorium</a></em>, <em><a
+                                                  href="https://faircopyeditor.com/"
+                                                  >FairCopy</a></em>, <em><a
+                                                  href="https://textgrid.de/en/" target="_blank"
+                                                  >TextGrid</a></em>, <em><a
+                                                  href="https://textualcommunities.org/app"
+                                                  target="_blank">Textual Communities</a></em></li>
+                                        </ul></li>
+                                    <li class="fragment">Existence of several resources with
+                                        specific functionalities that enable text and image
+                                        visualisation, queries, and/or statistical analyses. Examples:<ul>
+                                            <li>Publication: <em><a
+                                                  href="https://tei-publisher.com/" target="_blank"
+                                                  >TEI Publisher</a></em>, <em><a
+                                                  href="https://www.bbaw.de/bbaw-digital/telota/forschungsprojekte-und-software/ediarum"
+                                                  target="_blank">Ediarium</a></em>, <em><a
+                                                  href="http://evt.labcd.unipi.it/" target="_blank"
+                                                  >EVT</a></em></li>
+                                            <li>Corpus exploitation: <em><a
+                                                  href="https://notes.jan-oliver-ruediger.de/software/corpusexplorer-overview/"
+                                                  target="_blank">CorpusExplorer</a></em>, <em><a
+                                                  href="https://edictor.net/" target="_blank"
+                                                  >eDictor</a></em>, <em><a
+                                                  href="https://sites.google.com/site/philologic3/"
+                                                  target="_blank">PhiloLogic</a></em>, <em><a
+                                                  href="http://www.teitok.org" target="_blank"
+                                                  >TEITOK</a></em>, <em><a
+                                                  href="http://textometrie.ens-lyon.fr/?lang=en"
+                                                  target="_blank">TXM</a></em></li>
+                                        </ul></li>
                                 </ul></li>
                         </ul>
                     </section>
                     <section>
-                        <h3><em>DISCOver</em>: an interface to explore the <em>DISCO</em> sonnet corpus</h3>
-                        <figure>
-                            <img src="images/discover.png" alt="discover" />
-                            <figcaption>
-                                <a href="https://prf1.org/disco">https://prf1.org/disco</a> (<a
-                                    href="bermudez2023">Bermúdez Sabel et al. 2023</a>)
-                            </figcaption>
-                        </figure>
+                        <h2>If custom interface: Its preservation as a cultural object</h2>
+                        <ul>
+                            <li class="fragment">Rationale: interface as part of the philological
+                                discourse (<a href="#andrews2018">Andrews &amp; van Zundert
+                                2018</a>)</li>
+                            <li class="fragment">Presentational information (including interface
+                                functionalities) as part of the data model <ul class="fragment">
+                                    <li>TEI Processing Model (<a href="tei2023">TEI Consortium
+                                            2023</a>)</li>
+                                    <li>Relation with the bibliographical study of digital texts and
+                                        artifacts (e.g. ebooks, videogames, digital recordings of
+                                        artistic performances) </li>
+                                </ul></li>
+                        </ul>
                     </section>
                     <section>
-                        <img src="images/discover2.png" alt="discover" />
+                        <h3>Édition hyperDIplomatique de la lyrique GAlégo-portugaise
+                            (<em>DIGA</em>)</h3>
+                        <figure>
+                            <img src="images/diga.png" alt="DIGA" />
+                            <figcaption>
+                                <a href="https://helenasabel.github.io/DIGA/"
+                                    >https://helenasabel.github.io/DIGA/</a> (<a
+                                    href="#bermudez2022b">Bermúdez Sabel 2022</a>) </figcaption>
+                        </figure>
                     </section>
                 </section>
                 <section>
                     <section>
-                        <h1>Multi-format publishing</h1>
+                        <h1>From open data to open science</h1>
                     </section>
                     <section>
-                        <h2>Datasets and formats</h2>
+                        <h2>Data usability</h2>
                         <ul class="fragment">
                             <li>TEI and linked data <ul class="fragment">
                                     <li>Relation between TEI-XML and graph-based technologies (e.g.
@@ -254,41 +304,31 @@ man Drama,” 217–227. Second Conference on Computational Humanities Research.
                         </ul>
                     </section>
                     <section>
-                        <h2>Out-of-the-box corpus exploitation platforms</h2>
-                        <ul>
-                            <li class="fragment">The role of Virtual Research Environments in digital textual
-                                criticism (<a>Tóth-Czifra 2021</a>)</li>
-                            <li class="fragment">Existence of several resources with specific functionalities that enable
-                            text and image visualisation, queries, and statistical analyses. </li>
-<!--
-add the resources
--->
-                        </ul>
-                    </section>
-                    <section>
-                        <h2>If custom interface: Its preservation as a cultural object</h2>
-                        <ul>
-                            <li class="fragment">Rationale: interface as part of the philological discourse (<a
-                                    href="#andrews2018">Andrews &amp; van Zundert 2018</a>)</li>
-                            <li class="fragment">Presentational information (including interface functionalities) as
-                                part of the data model <ul class="fragment">
-                                    <li>TEI Processing Model (<a href="tei2023">TEI Consortium
-                                            2023</a>)</li>
-                                    <li>Relation with the bibliographical study of digital texts and
-                                        artifacts (e.g. ebooks, videogames, digital recordings of
-                                        artistic performances) </li>
+                        <h2>FAIR software</h2>
+                        <ul class="fragment">
+                            <li>FAIR software (<a href="#lamprecht2020">Lamprecht et al. 2020</a>)
+                                and open science workflows</li>
+                            <li>Besides data, reuse of <ul>
+                                    <li>Code and configuration parameters</li>
+                                    <li>Interfaces</li>
                                 </ul></li>
                         </ul>
                     </section>
                     <section>
-                        <h3>Édition hyperDIplomatique de la lyrique GAlégo-portugaise (<em>DIGA</em>)</h3>
+                        <h3><em>DISCOver</em>: an interface to explore the <em>DISCO</em> sonnet
+                            corpus</h3>
                         <figure>
-                            <img src="images/diga.png" alt="DIGA" />
+                            <img src="images/discover.png" alt="discover" />
                             <figcaption>
-                                <a href="https://helenasabel.github.io/DIGA/"
-                                    >https://helenasabel.github.io/DIGA/</a> (<a
-                                    href="#bermudez2022b">Bermúdez Sabel 2022</a>) </figcaption>
+                                <a href="https://prf1.org/disco">https://prf1.org/disco</a> (<a
+                                    href="bermudez2023">Bermúdez Sabel et al. 2023</a>)
+                            </figcaption>
                         </figure>
+                    </section>
+                    <section>
+                        <p>Re-use of <em><a href="https://versologie.cz/v2/tool_gunstick/"
+                                    target="_blank">Gunstick</a></em> within <em>DISCOver</em></p>
+                        <img src="images/discover2.png" alt="discover" />
                     </section>
                 </section>
                 <section>
@@ -298,21 +338,18 @@ add the resources
                     <section>
                         <h2>Final remarks</h2>
                         <ul class="fragment">
-                            <li>Quality and quantity are not trade-offs thanks to:
-                                <ul>
+                            <li>Quality and quantity are not trade-offs thanks to: <ul>
                                     <li>Quality assessment of machine-assisted pipelines (e.g. <a
                                             href="#blaess2022">Bläß et al. 2022</a>)</li>
                                 </ul>
                             </li>
-                            <li class="fragment">Is the role of the editor to establish the
-                                acceptable margin of error?</li>
+                            <li class="fragment">The role of the editor: <ul>
+                                    <li>Designing the pipeline, selecting the tools and automatic
+                                        annotation models closest to project needs</li>
+                                    <li>Establishing the acceptable margin of error</li>
+                                    <li>Prioritising human correction needs</li>
+                                </ul></li>
                         </ul>
-<!--
-- Role of the editor?
-    - Choosing tool and automatic annotation model closest to project needs
-    - Establish acceptable margin of error
-    - Prioritize human correction needs
--->
                     </section>
                 </section>
                 <section>
@@ -402,6 +439,12 @@ add the resources
                                     target="_blank">Attributing Authorship in the Noisy Digitized
                                     Correspondence of Jacob and Wilhelm Grimm.</a>” <em>Frontiers in
                                     Digital Humanities</em> 5.</li>
+                            <li id="khemakhem2017">Khemakhem, Mohamed, Luca Foppiano, and Laurent
+                                Romary. 2017. “<a href="https://hal.science/hal-01508868"
+                                    target="_blank">Automatic Extraction of TEI Structures in
+                                    Digitized Lexical Resources Using Conditional Random
+                                Fields.</a>” In <em>electronic lexicography, eLex 2017</em>, Sep
+                                2017, Leiden. </li>
                             <li id="klie2018">Klie, Jan-Christoph, Michael Bugert, Beto Boullosa,
                                 Richard Eckart de Castilho, and Iryna Gurevych. 2018. “<a
                                     href="https://aclanthology.org/C18-2002/" target="_blank">The
@@ -429,6 +472,12 @@ add the resources
                                     Layered Digital Library for Cataloguing and Research: Practical
                                     Experiences with Medieval Manuscripts, from TEI to Linked
                                     Data.</a>” In <em>DH2019 Book of Abstracts</em> Utrecht. </li>
+                            <li id="pagel2021"> Pagel, Janis, Nidhi Sihag, and Nils Reiter. 2021.
+                                    “<a href="http://ceur-ws.org/Vol-2989/short_paper34.pdf"
+                                    target="_blank">Predicting Structural Elements in German
+                                    Drama.</a>” In <em>Proceedings of the Second Conference on
+                                    Computational Humanities Research (CHR2021)</em>, pp. 217-227,
+                                Amsterdam, The Netherlands (Online), November 2021.</li>
                             <li id="ruiz2022">Ruiz, Pablo, Delphine Bernhard, Andrew Briand, and
                                 Carole Werner. 2022. “Computational drama analysis from almost zero
                                 electronic text: The case of Alsatian theater.” <em>Workshop on
@@ -466,7 +515,6 @@ add the resources
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins:[RevealMarkdown, RevealHighlight, RevealNotes],
                 slideNumber: 'c'
-
             });</script>
     </body>
 </html>
